@@ -1,0 +1,45 @@
+/* Sidebar styling */
+.sidebar {
+  transition: transform 0.3s ease;
+}
+.sidebar:hover {
+  transform: scale(1.02);
+}
+
+/* Category hover effect */
+.category-item {
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+.category-item:hover {
+  background-color: #f0f4ff;
+  color: #0d6efd;
+}
+
+/* Product card animations */
+.product-card {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Fake product image */
+.product-img {
+  height: 150px;
+  margin: 15px;
+  transition: background 0.3s ease;
+}
+.product-img:hover {
+  background: #e9f2ff;
+}
+
+/* Add to Cart button hover */
+.add-btn {
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+.add-btn:hover {
+  background: #0b5ed7;
+  transform: scale(1.05);
+}

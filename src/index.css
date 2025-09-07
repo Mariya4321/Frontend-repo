@@ -1,0 +1,55 @@
+/* === Gradient Background === */
+.body-gradient {
+    background: linear-gradient(135deg,#74ebd5 0%, #ACB6E5 50%, #f9ca24 100%);
+ min-height: 100vh;
+}
+
+/* === Glassmorphism Sidebar === */
+.sidebar-glass {
+ background: rgba(255,255,255,0.6);
+ backdrop-filter: blur(12px);
+ border-radius: 16px;
+ box-shadow: 0 2px 14px rgba(44,62,80,0.13);
+ border: none;
+}
+
+/* === Card Animations & Gradient === */
+.card-animate {
+ transition: transform 0.13s cubic-bezier(0.4,0,0.2,1), box-shadow 0.15s;
+ background: linear-gradient(135deg, #6a89cc 0%, #b8e994 93%, #f9ca24 100%);
+ border-radius: 18px;
+ box-shadow: 0 8px 18px rgba(52,152,219,0.07);
+}
+.card-animate:hover {
+  box-shadow: 0 16px 34px rgba(52,152,219,0.15);
+  transform: scale(1.025);
+}
+
+/* === Button Animation === */
+.btn-animate:hover,.btn-animate:focus {
+ animation: pulseBtn 0.35s;
+ background: linear-gradient(90deg,#5f6fff,#00cec9 90%);
+ color: #fff !important;
+}
+
+@keyframes pulseBtn {
+ 0% { transform: scale(1); }
+ 50% { transform: scale(1.07); }
+ 100% { transform: scale(1); }
+}
+
+/* Category Badge Style */
+.badge-category {
+ background: linear-gradient(120deg,#00cec9 20%,#f9ca24 90%);
+ color: #25396f;
+ font-size: 0.88rem;
+ font-weight: 500;
+ letter-spacing: 0.5px;
+ border-radius: 16px;
+ padding: 0.35em 1.1em;
+ display: inline-block;
+ margin-bottom: 6px;
+}
+
+/* For Animate.css delay */
+[data-idx] { animation-delay: calc(0.05s * var(--idx)); }
